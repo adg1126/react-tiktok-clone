@@ -4,7 +4,7 @@ import VideoFooter from '../VideoFooter/VideoFooter';
 import VideoSidebar from '../VideoSidebar/VideoSidebar';
 
 export default function Video({
-  vidUrl,
+  url,
   channel,
   description,
   song,
@@ -32,7 +32,7 @@ export default function Video({
         loop
         onClick={handleVideoPlay}
         ref={videoRef}
-        src={vidUrl}
+        src={url}
       ></video>
       <VideoFooter {...{ channel, description, song }} />
       <VideoSidebar {...{ likes, shares, messages }} />
